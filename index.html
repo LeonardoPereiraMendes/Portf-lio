@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Barra de Navegação com Ancoras e Títulos Centralizados</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <style>
+    
+    /* Estilos para o dark mode */
+body.dark-mode {
+  background-color: black;
+  color: white; /* Define a cor padrão do texto no modo escuro como branco */
+}
+
+/* Estilos para o texto no modo escuro */
+body.dark-mode .texto-about {
+  color: white; /* Altera a cor do texto do cartão 'About' no modo escuro para branco */
+}
+
+  
+     /* Estilos para o cartão */
+     .cartao {
+      width: 400px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 20px auto;
+      text-align: left;
+      display: flex;
+      align-items: center;
+    }
+
+    .cartao .texto {
+      flex: 1;
+      padding-right: 20px;
+    }
+
+    .cartao h2 {
+      color: #333;
+    }
+
+    .cartao p {
+      color: #666;
+    }
+
+    .cartao img {
+      width: 120px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .cartao h2 {
+      color: #333;
+    }
+
+    .cartao p {
+      color: #666;
+    }
+  
+    /* Estilos para a barra azul */
+    .barra-azul {
+      width: 94%;
+      height: 60px; /* Altura da barra */
+      background-color: rgb(255, 136, 0);
+      display: flex;
+      justify-content: space-between; /* Distribuir elementos à esquerda e à direita */
+      align-items: center;
+      padding: 10px 50px; /* Adicionando padding para espaçamento interno */
+      position: fixed; /* Fixar no topo */
+      top: 10px; /* Posicionamento no topo com uma ligeira descida */
+      z-index: 999; /* Ordem de camadas */
+      border-radius: 20px; /* Borda arredondada */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    }
+
+    /* Estilos para os botões na barra */
+    .barra-azul .botao {
+      background-color: white;
+      color: rgb(0, 0, 0);
+      border: none;
+      border-radius: 10px;
+      padding: 8px 15px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    /* Estilos para os ícones de light mode e dark mode */
+    .dark-light-buttons {
+      display: flex;
+      align-items: center;
+    }
+
+    .dark-light-buttons button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 20px;
+      color: white;
+      margin-right: 10px;
+    }
+
+    /* Estilos para as seções */
+    .secao {
+      margin-top: 70px; /* Espaço para a barra não sobrepor o conteúdo */
+      text-align: center; /* Alinhamento central do texto */
+    }
+
+    /* Estilos para os títulos */
+    .secao h1 {
+      margin-top: 20px; /* Espaçamento para o título */
+    }
+
+    /* Estilos para o dark mode */
+    body.dark-mode {
+      background-color: black;
+    }
+
+    body.dark-mode .secao h1 {
+      color: white;
+    }
+
+    /* Ajuste adicional para mover os botões para a esquerda */
+    .barra-azul div:last-child {
+      margin-right: 20px; /* Diminuindo a margem dos botões da direita */
+    }
+  </style>
+</head>
+<body class="light-mode">
+
+  <div class="barra-azul">
+    <div class="dark-light-buttons">
+      <button class="toggle-mode-btn" onclick="toggleMode('light')">
+        <i class="fas fa-sun"></i> <!-- Ícone de light mode -->
+      </button>
+      <button class="toggle-mode-btn" onclick="toggleMode('dark')">
+        <i class="fas fa-moon"></i> <!-- Ícone de dark mode -->
+      </button>
+    </div>
+    <div>
+      <a href="#home" class="botao">Home</a>
+      <a href="#about" class="botao">About</a>
+      <a href="#skills" class="botao">Skills</a>
+      <a href="#contact" class="botao">Contact me</a>
+    </div>
+  </div>
+
+  <div id="home" class="secao">
+   <br><b><h1>Home</h1></b>
+    <!-- Conteúdo da seção Home -->
+    <div class="cartao">
+      <div class="texto">
+        <h1>Olá<p><h1>Sou o Leonardo</p>
+       
+        
+      </div>
+      <img src="bit.png" alt="Imagem" />
+    </div>
+    
+  </div>
+
+  <div id="about" class="secao">
+    <h1>About</h1>
+    <div class="cartao">
+      <div class="texto">
+        <h>Olá, chamo-me Leonardo, sou português e vivo em Penamacor, tenho 17 anos. <br>Frequento de momento a escola profissional do fundão, no curso de PI (Programador Informática)</p>
+       
+        
+      </div>
+      <img src="WhatsApp Image 2023-11-26 at 16.45.45.jpeg" alt="Imagem" />
+    </div>
+    <!-- Botão do GitHub -->
+    <!-- Botoes para Redes Sociais -->
+<div style="text-align: center; margin-top: 20px;">
+  <!-- Botão do Instagram -->
+  <a href="https://www.instagram.com/leonardo.pereira.mendes/?next=%2F" target="_blank" style="text-decoration: none; color: #fff; background-color: #333; border-radius: 50%; display: inline-block; width: 40px; height: 40px; line-height: 40px; text-align: center; margin: 0 10px;">
+    <i style="font-size: 20px;" class="fab fa-instagram"></i> <!-- Ícone do Instagram -->
+  </a>
+  
+  <!-- Botão do LinkedIn -->
+  <a href="https://www.linkedin.com/in/seu_perfil" target="_blank" style="text-decoration: none; color: #fff; background-color: #333; border-radius: 50%; display: inline-block; width: 40px; height: 40px; line-height: 40px; text-align: center; margin: 0 10px;">
+    <i style="font-size: 20px;" class="fab fa-linkedin"></i> <!-- Ícone do LinkedIn -->
+  </a>
+  
+  <!-- Botão do GitHub -->
+  <a href="https://github.com/LeonardoPereiraMendes" target="_blank" style="text-decoration: none; color: #fff; background-color: #333; border-radius: 50%; display: inline-block; width: 40px; height: 40px; line-height: 40px; text-align: center; margin: 0 10px;">
+    <i style="font-size: 20px;" class="fab fa-github"></i> <!-- Ícone do GitHub -->
+  </a>
+</div>
+    </a>
+  <div id="skills" class="secao">
+    
+    <h1>Skills</h1>
+    <!-- Conteúdo da seção Skills -->
+    
+  </div>
+
+  <div id="contact" class="secao">
+    <h1>Contact me</h1>
+    <!-- Conteúdo da seção Contact me -->
+  </div>
+
+  <script>
+    function toggleMode(mode) {
+      const body = document.body;
+      if (mode === 'dark') {
+        body.classList.add("dark-mode");
+      } else {
+        body.classList.remove("dark-mode");
+      }
+    }
+  </script>
+</body>
+</html>
